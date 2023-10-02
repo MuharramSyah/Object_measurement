@@ -11,7 +11,7 @@ detector = cv2.aruco.ArucoDetector(arucoDict, arucoParams)
 if __name__ == "__main__":
     print("[INFO] Running program...")
 
-    img = cv2.imread('sample.png')
+    img = cv2.imread('./sample/sample.png')
     img = imutils.resize(img, width=1080)
 
     (corners, ids, rejected) = cv2.aruco.detectMarkers(img, arucoDict, parameters=arucoParams)
